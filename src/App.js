@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import EventPanel from "./components/EventPanel";
+import MapLink from "./components/MapLink";
+import StatsPanel from "./components/StatsPanel";
+import PlanningPanel from "./components/PlanningPanel";
+
+import { AiOutlinePaperClip } from "react-icons/ai";
+import "./styles/main.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="App--header">
+        <AiOutlinePaperClip />
+        <span>ZeroPaper Tv App</span>
+      </div>
+      <StatsPanel />
+      <div className="row">
+        <EventPanel />
+        <PlanningPanel />
+      </div>
+      <MapLink />
     </div>
   );
 }

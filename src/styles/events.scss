@@ -1,0 +1,12 @@
+.Event {
+  &:not(:last-child) {
+    border-bottom: thin solid $panel-border-color;
+  }
+  padding: .5rem 0;
+  .date {
+    display: inline-block;
+    padding: .25rem 0;
+    font-weight: 200;
+    font-size: .879rem;
+  }
+} 

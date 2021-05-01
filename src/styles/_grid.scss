@@ -1,0 +1,12 @@
+.row {
+  flex: 1;
+  padding: .5rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: .75rem;
+}
+
+.col {
+  flex: 1;
+}
